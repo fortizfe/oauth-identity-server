@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SelfHost.Oauth.Identity": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "$(Configuration)"
+      },
+      "applicationUrl": "http://localhost:5010"
+    }
+  }
+}

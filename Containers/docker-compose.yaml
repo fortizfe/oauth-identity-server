@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  sql-server-oauth-identity:
+    container_name: sql-server-oauth-identity
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Oauth_2020
+    ports:
+      - 11433:1433
+    volumes:
+      - ./data/sqlserver/data/:/var/opt/mssql/data
